@@ -2,6 +2,15 @@ build/*
 .vscode/*
 
 .DS_Store
+
+labs/*/lib
+labs/*/CMakeFiles
+labs/*/CMakeCache.txt
+labs/*/_deps
+labs/*/bin
+labs/*/cmake_install.cmake
+labs/*/CTestTestfile.cmake
+Makefile
 # Prerequisites
 *.d
 
