@@ -1,0 +1,24 @@
+#include "../headers/Squirrel.h"
+#include "../headers/Knight.h"
+#include "../headers/Pegasus.h"
+
+Squirrel::Squirrel(const std::string& name, double x, double y)
+    : NPC(name, x, y) {}
+
+void Squirrel::interact(NPC& other) {
+    if (!other.isAlive()) return;
+    other.interactWith(*this);
+}
+
+void Squirrel::interactWith(Knight& knight) {
+}
+
+void Squirrel::interactWith(Squirrel& squirrel) {
+}
+
+void Squirrel::interactWith(Pegasus& pegasus) {
+}
+
+std::string Squirrel::getType() const {
+    return "Squirrel";
+}
